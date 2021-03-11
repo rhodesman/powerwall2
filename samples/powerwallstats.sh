@@ -99,7 +99,7 @@ update_cookie () {
             echo $UserRecord
         fi
         echo "Reloading Telegraf config"
-        pkill -1 telegraf
+        brew services restart telegraf
     fi
 }
 
